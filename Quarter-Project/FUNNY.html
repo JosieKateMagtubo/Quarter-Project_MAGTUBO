@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: "Times New Roman", sans-serif;
+      font-size: 20px;
+      margin: 0px;
+      background-image: url(https://i.pinimg.com/originals/d1/72/21/d172217790709d0cdd5e6e3dcad61797.gif);
+      background-repeat: repeat-y;
+      background-size: cover;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 100px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #000000;
+      overflow-x: hidden;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+
+    .sidenav a {
+      display: block;
+      padding: 6px 8px;
+      width: 100%;
+      text-decoration: none;
+      color: white;
+    }
+
+    .sidenav a:hover {
+      color: #f2f2f2;
+    }
+
+    .sidenav a:visited {
+      color: #999999;
+    }
+
+    .menu-table {
+      border: 3px solid black;
+      border-collapse: collapse;
+      width: calc(100% - 100px);
+      margin-left: 100px;
+      text-align: center;
+      background-color: #D0F3D5;
+      margin-top: 0px;
+      position: fixed;
+    }
+
+    .menu-table th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .menu-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .menu-btn:hover {
+      background-color: #F6BCDD;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .box {
+      width: 70%;
+      max-width: 1000px;
+      height: 150px;
+      border: 5px solid #3e4444;
+      text-align: center;
+      margin-top: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #b3ffd9;
+    }
+
+    p {
+      font-family: 'Courier New';
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .sidenav img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .sidenav a:hover img {
+      transform: scale(1.1);
+    }
+
+    .sidenav img {
+      width: 80%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s;
+      z-index: 9999;
+    }
+
+    input[type="checkbox"]:checked + label {
+      transform: translateY(-400px);
+    }
+
+    .draggable-element {
+      width: 100px;
+      height: 100px;
+      background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXAzemZ5bDI4dnpja3FxeWgxOXNiOWdobDBhbTA2dnMzM3FlMTRrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yM2Zoz9kBW1LHjJ1mP/source.gif);
+      background-size: cover;
+      transition: transform 0.2s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="LOGO.html"><img src="https://i.pinimg.com/originals/66/a9/74/66a97482e97f03a9172aca0d3e61ca12.jpg" alt="Logo" width="30px" height="30px"></a>
+  <a href="HOMEPAGE.html"><img src="https://i.pinimg.com/originals/84/5a/4d/845a4d9d1bb09107051c3dd00de648d1.jpg" alt="Home Page" width="30px" height="30px"></a>
+  <a href="FAQ.html"><img src="https://i.pinimg.com/736x/4d/64/46/4d6446ea37c0ab4c56f662a152fc5026.jpg" alt="FAQ" width="30px" height="30px"></a>
+</div>
+
+<table class="menu-table">
+  <tr>
+    <th><a href="MOTIVATIONAL.html" class="menu-btn">Motivational Quotes</a></th>
+    <th><a href="FUNNY.html" class="menu-btn">Funny Quotes</a></th>
+    <th><a href="INSPIRATIONAL.html" class="menu-btn">Inspirational Quotes</a></th>
+  </tr>
+</table>
+
+<div class="container">
+	<div class="box">
+		<p>"I told my wife she should embrace her mistakes. She gave me a hug." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"The early bird gets the worm, but the second mouse gets the cheese." — Steven Wright</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm on a seafood diet. I see food and I eat it." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"I asked God for a bike, but I know God doesn't work that way. So, I stole a bike and asked for forgiveness." — Emo Philips</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm writing a book. I've got the page numbers done." — Steven Wright</p>
+	</div>
+
+	<div class="box">
+		<p>"Some people are like clouds. When they go away, it's a brighter day." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it." — Terry Pratchett</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm not lazy, I'm just in energy-saving mode." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm so good at sleeping, I can do it with my eyes closed!" — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm not arguing, I'm just explaining why I'm right." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm not shy. I'm holding back my awesomeness so I don't intimidate you." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"Why do they call it rush hour when nothing moves?" — Robin Williams</p>
+	</div>
+
+	<div class="box">
+		<p>"A day without sunshine is like, you know, night." — Steve Martin</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm not a vegetarian because I love animals. I'm a vegetarian because I hate plants." — A. Whitney Brown</p>
+	</div>
+
+	<div class="box">
+		<p>"The only mystery in life is why the kamikaze pilots wore helmets." — Al McGuire</p>
+	</div>
+
+	<div class="box">
+		<p>"I intend to live forever. So far, so good." — Steven Wright</p>
+	</div>
+
+	<div class="box">
+		<p>"Why be moody when you can shake your booty?" — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm not short, I'm concentrated awesome." — Unknown</p>
+	</div>
+
+	<div class="box">
+		<p>"I'm so broke, I can't even afford my free time." — Unknown</p>
+	</div>
+
+</div>
+
+
+<input type="checkbox" id="draggable-toggle">
+<label for="draggable-toggle">
+  <div class="draggable-element"></div>
+</label>
+
+</body>
+</html>

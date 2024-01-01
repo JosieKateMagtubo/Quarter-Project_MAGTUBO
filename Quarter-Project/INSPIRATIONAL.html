@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  <style>
+    body {
+      font-family: "Times New Roman", sans-serif;
+      font-size: 20px;
+      margin: 0px;
+      background-image: url(https://i.pinimg.com/originals/d1/72/21/d172217790709d0cdd5e6e3dcad61797.gif);
+      background-repeat: repeat-y;
+      background-size: cover;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 100px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #000000;
+      overflow-x: hidden;
+      padding-top: 10px;
+      padding-left: 5px;
+    }
+
+    .sidenav a {
+      display: block;
+      padding: 6px 8px;
+      width: 100%;
+      text-decoration: none;
+      color: white;
+    }
+
+    .sidenav a:hover {
+      color: #f2f2f2;
+    }
+
+    .sidenav a:visited {
+      color: #999999;
+    }
+
+    .menu-table {
+      border: 3px solid black;
+      border-collapse: collapse;
+      width: calc(100% - 100px);
+      margin-left: 100px;
+      text-align: center;
+      background-color: #D0F3D5;
+      margin-top: 0px;
+      position: fixed;
+    }
+
+    .menu-table th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .menu-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .menu-btn:hover {
+      background-color: #F6BCDD;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .box {
+      width: 70%;
+      max-width: 1000px;
+      height: 150px;
+      border: 5px solid #3e4444;
+      text-align: center;
+      margin-top: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffcccc;
+    }
+
+    p {
+      font-family: 'Courier New';
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .sidenav img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .sidenav a:hover img {
+      transform: scale(1.1);
+    }
+
+    .sidenav img {
+      width: 80%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s;
+      z-index: 9999;
+    }
+
+    input[type="checkbox"]:checked + label {
+      transform: translateY(-400px);
+    }
+
+    /* Animated image */
+    .draggable-element {
+      width: 100px;
+      height: 100px;
+      background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXAzemZ5bDI4dnpja3FxeWgxOXNiOWdobDBhbTA2dnMzM3FlMTRrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yM2Zoz9kBW1LHjJ1mP/source.gif);
+      background-size: cover;
+      transition: transform 0.2s;
+    }
+  </style>
+<body>
+
+<div class="sidenav">
+  <a href="LOGO.html"><img src="https://i.pinimg.com/originals/66/a9/74/66a97482e97f03a9172aca0d3e61ca12.jpg" alt="Logo" width="30px" height="30px"></a>
+  <a href="HOMEPAGE.html"><img src="https://i.pinimg.com/originals/84/5a/4d/845a4d9d1bb09107051c3dd00de648d1.jpg" alt="Home Page" width="30px" height="30px"></a>
+  <a href="FAQ.html"><img src="https://i.pinimg.com/736x/4d/64/46/4d6446ea37c0ab4c56f662a152fc5026.jpg" alt="FAQ" width="30px" height="30px"></a>
+</div>
+
+<table class="menu-table">
+  <tr>
+    <th><a href="MOTIVATIONAL.html" class="menu-btn">Motivational Quotes</a></th>
+    <th><a href="FUNNY.html" class="menu-btn">Funny Quotes</a></th>
+    <th><a href="INSPIRATIONAL.html" class="menu-btn">Inspirational Quotes</a></th>
+  </tr>
+</table>
+
+<div class="container">
+	<div class="box">
+		<p>"Behind every great man, there is a woman rolling her eyes." — Jim Carrey</p>
+    </div>
+    <div class="box">
+        <p>"I'm writing a book. I've got the page numbers done." — Steven Wright</p>
+    </div>
+    <div class="box">
+        <p>"The best time to plant a tree was 20 years ago. The second best time is now." — Unknown</p>
+    </div>
+	<div class="box">
+        <p>"I used to be a banker, but then I lost interest." — Unknown</p>
+    </div>
+    <div class="box">
+        <p>"Why do they call it rush hour when nothing moves?" — Robin Williams</p>
+    </div>
+    <div class="box">
+        <p>"I'm on the whiskey diet. I've lost three days already." — Tommy Cooper</p>
+    </div>	
+	<div class="box">
+		<p>"Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill</p>
+	</div>
+
+	<div class="box">
+		<p>"The only way to do great work is to love what you do." — Steve Jobs</p>
+	</div>
+
+	<div class="box">
+		<p>"Believe you can and you're halfway there." — Theodore Roosevelt</p>
+	</div>
+
+	<div class="box">
+		<p>"Hardships often prepare ordinary people for an extraordinary destiny." — C.S. Lewis</p>
+	</div>
+
+	<div class="box">
+		<p>"The future belongs to those who believe in the beauty of their dreams." — Eleanor Roosevelt</p>
+	</div>
+
+	<div class="box">
+		<p>"The only limit to our realization of tomorrow will be our doubts of today." — Franklin D. Roosevelt</p>
+	</div>
+
+	<div class="box">
+		<p>"You are never too old to set another goal or to dream a new dream." — C.S. Lewis</p>
+	</div>
+
+	<div class="box">
+		<p>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." — Albert Schweitzer</p>
+	</div>
+
+	<div class="box">
+		<p>"The only person you are destined to become is the person you decide to be." — Ralph Waldo Emerson</p>
+	</div>
+
+	<div class="box">
+		<p>"The biggest risk is not taking any risk. In a world that's changing quickly, the only strategy that is guaranteed to fail is not taking risks." — Mark Zuckerberg</p>
+	</div>
+
+	<div class="box">
+		<p>"Success is walking from failure to failure with no loss of enthusiasm." — Winston Churchill</p>
+	</div>
+
+	<div class="box">
+		<p>"Your time is limited, don't waste it living someone else's life." — Steve Jobs</p>
+	</div>
+
+	<div class="box">
+		<p>"The only way to achieve the impossible is to believe it is possible." — Charles Kingsleigh</p>
+	</div>
+
+	<div class="box">
+		<p>"The future belongs to those who prepare for it today." — Malcolm X</p>
+	</div>
+
+	<div class="box">
+		<p>"The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will." — Vince Lombardi</p>
+	</div>
+
+	<div class="box">
+		<p>"Every accomplishment starts with the decision to try." — John F. Kennedy</p>
+	</div>
+
+	<div class="box">
+		<p>"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." — Christian D. Larson</p>
+	</div>
+
+	<div class="box">
+		<p>"Success is the sum of small efforts, repeated day in and day out." — Robert Collier</p>
+	</div>
+
+	<div class="box">
+		<p>"Don't watch the clock; do what it does. Keep going." — Sam Levenson</p>
+	</div>
+
+	<div class="box">
+		<p>"In the middle of every difficulty lies opportunity." — Albert Einstein</p>
+	</div>
+
+</div>
+
+<input type="checkbox" id="draggable-toggle">
+<label for="draggable-toggle">
+  <div class="draggable-element"></div>
+</label>
+
+</body>
+</html>
