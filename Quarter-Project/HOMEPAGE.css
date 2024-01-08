@@ -1,0 +1,117 @@
+/* HOMEPAGE.css */
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 20px;
+  background-image: url(https://i.pinimg.com/originals/b3/9c/0c/b39c0c466fa2e880bcf8b904305041aa.gif);
+  background-size: cover;
+  margin: 0;
+}
+/*Side Navigation :)) */
+.sidenav {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.sidenav img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.sidenav a:hover img {
+  transform: scale(1.1);
+}
+
+.sidenav img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu-table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  width: calc(100% - 100px);
+  margin-left: 100px;
+  text-align: center;
+  background-color: #D0F3D5;
+  margin-top: 0px;
+  position: fixed;
+}
+
+.menu-table th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.menu-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-btn:hover {
+  background-color: #F6BCDD;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  margin-right: 20px;
+}
+
+.box {
+  width: 70%;
+  max-width: 800px;
+  height: 200px;
+  border: 5px solid #3e4444;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e6ffff;
+}
+
+p {
+  font-family: 'Courier New';
+  font-size: 30px;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+  z-index: 9999;
+}
+
+input[type="checkbox"]:checked + label {
+  transform: translateY(-400px);
+}
+
+.draggable-element {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXAzemZ5bDI4dnpja3FxeWgxOXNiOWdobDBhbTA2dnMzM3FlMTRrZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yM2Zoz9kBW1LHjJ1mP/source.gif);
+  background-size: cover;
+  transition: transform 0.2s;
+}
