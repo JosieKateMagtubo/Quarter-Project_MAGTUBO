@@ -111,13 +111,6 @@
       transition: transform 0.2s;
     }
 
-    /* Additional styles for social icons */
-    .social-icons {
-      display: flex;
-      gap: 10px;
-    }
-
-    /* Additional styles for social icons */
     .social-icons {
       display: flex;
       gap: 10px;
